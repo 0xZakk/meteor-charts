@@ -1,0 +1,17 @@
+<template name="line">
+    <div class="chart line-chart">
+        {{#if header}}
+            <div class="chart-header">
+                {{header}}
+            </div>
+        {{/if}}
+        <div id="{{title}}-line-canvas-container line-chart-container">
+            <canvas id="{{title}}-line-chart-js"></canvas>
+        </div>
+        {{#if footer}}
+            <div class="chart-footer">
+                {{footer}}
+            </div>
+        {{/if}}
+    </div>
+</template>

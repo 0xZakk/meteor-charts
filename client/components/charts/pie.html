@@ -1,0 +1,19 @@
+<template name="pie">
+    <div class="chart col-md-3">
+        {{#if noData}}
+        {{else}}
+            {{renderNewPie}}
+            {{#if header}}
+                {{header}}
+            {{/if}}
+            <div class="{{header}}-pie-canvas-container pie-container">
+                <canvas id="{{header}}-pie-chart-js"></canvas>
+            </div>
+            {{#if footer}}
+                <div style="font-size:11px;">
+                    {{footer}}
+                </div>
+            {{/if }}
+        {{/if}}
+    </div>
+</template>

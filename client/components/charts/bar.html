@@ -1,0 +1,16 @@
+<template name="bar">
+    <div class="chart col-md-4" style="">
+        {{renderNewBar}}
+        {{#if header}}
+            {{header}}
+        {{/if}}
+        <div class="{{header}}-bar-canvas-container bar-container {{timeframe}}">
+            <canvas id="{{header}}-bar-chart-js" class=""></canvas>
+        </div>
+        {{#if footer}}
+            <div style="font-size:11px;">
+                {{footer}}
+            </div>
+        {{/if }}
+    </div>
+</template>

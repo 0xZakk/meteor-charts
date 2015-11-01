@@ -1,0 +1,15 @@
+<head>
+  <title>chart-test</title>
+</head>
+
+<body>
+    <div class="container">
+        {{> parentTemplate}}        
+    </div>
+</body>
+
+<template name="parentTemplate">
+    <div class="col-md-6">
+        {{> donut chartData=chartData}}
+    </div>
+</template>
